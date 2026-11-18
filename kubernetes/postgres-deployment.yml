@@ -34,10 +34,10 @@ spec:
           resources:
             limits:
               cpu: "1"
-              memory: 32GB
+              memory: 32G
             requests:
               cpu: "1"
-              memory: 16GB
+              memory: 16G
       volumes:
         - name: postgres-data
           persistentVolumeClaim:
