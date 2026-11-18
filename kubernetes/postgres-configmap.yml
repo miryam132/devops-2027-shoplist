@@ -4,6 +4,7 @@ metadata:
   name: postgres-init
   namespace: shoplist
 data:
+  
   init.sql: |
     CREATE TABLE IF NOT EXISTS products (
         id        SERIAL PRIMARY KEY,

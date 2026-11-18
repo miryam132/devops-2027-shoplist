@@ -31,6 +31,13 @@ spec:
               mountPath: /var/lib/postgresql/data
             - name: postgres-init
               mountPath: /docker-entrypoint-initdb.d
+          resources:
+            limits:
+              cpu: "1"
+              memory: 32GB
+            requests:
+              cpu: "1"
+              memory: 16GB
       volumes:
         - name: postgres-data
           persistentVolumeClaim:
